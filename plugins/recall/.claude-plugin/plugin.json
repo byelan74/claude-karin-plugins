@@ -1,0 +1,20 @@
+{
+  "name": "recall",
+  "displayName": "Recall",
+  "version": "1.0.0",
+  "description": "Search all your past Claude Code sessions and every project's memory files — locally, with secret redaction. Keeps a copy before Claude Code's 30-day cleanup deletes transcripts.",
+  "author": {
+    "name": "Karin Naak-in",
+    "url": "https://github.com/byelan74"
+  },
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "search",
+    "history",
+    "sessions",
+    "recall"
+  ],
+  "homepage": "https://github.com/byelan74/claude-recall",
+  "repository": "https://github.com/byelan74/claude-recall"
+}

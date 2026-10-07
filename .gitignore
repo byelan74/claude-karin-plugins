@@ -1,0 +1,11 @@
+# never commit an index — it is somebody's conversation history
+*.db
+*.db-wal
+*.db-shm
+*.lock
+dirmap.json
+recall-index/
+__pycache__/
+*.pyc
+*.bak*
+.DS_Store

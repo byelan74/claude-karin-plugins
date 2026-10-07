@@ -1,0 +1,17 @@
+{
+  "name": "claude-recall",
+  "owner": {
+    "name": "byelan74",
+    "url": "https://github.com/byelan74"
+  },
+  "metadata": {
+    "description": "claude-recall — local search over your past Claude Code sessions"
+  },
+  "plugins": [
+    {
+      "name": "recall",
+      "source": "./plugins/recall",
+      "description": "Search all your past Claude Code sessions and every project's memory files — locally, with secret redaction."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+#!/bin/sh
+# blocks a commit that would publish private references (see tools/check_private.py)
+exec python3 "$(git rev-parse --show-toplevel)/tools/check_private.py"
