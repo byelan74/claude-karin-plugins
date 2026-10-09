@@ -13,12 +13,12 @@ ROOT = Path(__file__).resolve().parent.parent
 PATTERNS = [
     r"karin", r"\bmfec\b", r"onedrive", r"krungsri", r"(?-i:\bBAY\b)", r"aycap",
     r"xsiam", r"xsoar", r"cortex", r"unit ?42", r"freelance_ai", r"servicexcellence",
-    r"\b10\.4\.\d", r"\.co\.th\b", r"@gmail\.com", r"/Users/[a-z]", r"claude-karin",
+    r"\b10\.4\.\d", r"\.co\.th\b", r"@gmail\.com", r"/Users/[a-z]", r"\.claude-karin\b", r"claude-karin(?!-plugins)",
 ]
 _RE = re.compile("|".join(PATTERNS), re.I)
 # The author's public credit (LICENSE, plugin.json author) is the one deliberate exception:
-# the name itself is published on purpose; everything else matching the patterns is not.
-ALLOW = re.compile(r"Karin Naak-in")
+# the name itself is published on purpose, and so is the marketplace name claude-karin-plugins; everything else matching the patterns is not.
+ALLOW = re.compile(r"Karin Naak-in|(?<!\.)claude-karin-plugins")
 SKIP_DIRS = {".git", "__pycache__"}
 SELF = Path(__file__).resolve()
 

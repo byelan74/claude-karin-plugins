@@ -1,17 +1,22 @@
 {
-  "name": "claude-recall",
+  "name": "claude-karin-plugins",
   "owner": {
     "name": "byelan74",
     "url": "https://github.com/byelan74"
   },
   "metadata": {
-    "description": "claude-recall — local search over your past Claude Code sessions"
+    "description": "Claude Code plugins by byelan74 — recall (search past sessions) and savebeforecompact (keep long sessions going across compacts)"
   },
   "plugins": [
     {
       "name": "recall",
       "source": "./plugins/recall",
       "description": "Search all your past Claude Code sessions and every project's memory files — locally, with secret redaction."
+    },
+    {
+      "name": "savebeforecompact",
+      "source": "./plugins/savebeforecompact",
+      "description": "Keep one long session going across many compacts: save a resume note, warn at 70 %/88 % context, reload the note plus everything after it."
     }
   ]
 }
