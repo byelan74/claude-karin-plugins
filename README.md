@@ -8,7 +8,7 @@ Python, no servers, no model calls.
 | Plugin | What it does | Status |
 |---|---|---|
 | [**recall**](plugins/recall/) | Search every past Claude Code session — and every project's memory files — from inside Claude Code. Keeps a copy before Claude Code's 30-day cleanup deletes transcripts. | 1.0.0 |
-| [**savebeforecompact**](plugins/savebeforecompact/) | Keep one long session going across many compacts: saves a resume note, warns at 70 % / 88 % context, and loads the note back — plus everything that happened after it — when the session is compacted or resumed. | 0.1.0 · under test |
+| [**savebeforecompact**](plugins/savebeforecompact/) | Keep one long session going across many compacts: saves a resume note, warns at 70 % / 88 % context, and loads the note back — plus everything that happened after it — when the session is compacted or resumed. | 1.0.0 |
 
 Each plugin installs on its own; they also work well together.
 
@@ -35,9 +35,8 @@ two commands above. Your index in `~/.claude/recall-index/` is kept.
 
 ## Requirements
 
-Claude Code with plugin support · Python 3.9+ (`python3` or `python` on `PATH`). recall is tested on
-macOS and Windows 11 and needs SQLite 3.43+ (see its README); savebeforecompact is tested on macOS,
-Windows testing is in progress.
+Claude Code with plugin support · Python 3.9+ (`python3` or `python` on `PATH`). Both plugins are tested on
+macOS and Windows 11 (Git Bash, Python 3.12). recall also needs SQLite 3.43+ (see its README).
 
 ## Development
 

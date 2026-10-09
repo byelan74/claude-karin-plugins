@@ -4,7 +4,6 @@
 Local only. Standard-library Python. No server, no model calls.
 
 > ภาษาไทยอยู่ด้านล่าง · [Thai below](#ภาษาไทย)
-> **Status: 0.1.0 — under test.** Works on macOS; Windows testing in progress.
 
 When a session's context fills up, Claude Code compacts it: the conversation is replaced by a
 summary. The summary keeps the gist but drops what you need to carry on — the exact command that
@@ -82,6 +81,8 @@ replaced with `[REDACTED]` — `sk-…`, `api_key=`, `password=`, `Bearer …`, 
 - Claude Code with plugin support.
 - Python 3.9+ on `PATH` as `python3` or `python` (Windows: python.org installer; the hooks fall
   back from the Microsoft Store `python3` stub to `python` by themselves).
+- Tested on macOS (Python 3.9 / 3.14) and Windows 11 (Git Bash, Python 3.12): the test suite, install
+  from GitHub, the 70 % warning, reload after `--resume` and after a real `/compact`.
 
 ## Works well with
 

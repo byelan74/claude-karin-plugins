@@ -1,14 +1,21 @@
 {
   "name": "savebeforecompact",
   "displayName": "Save Before Compact",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Keep one long Claude Code session going across many compacts: saves a resume note before compacting, warns at 70 % / 88 % context, and loads the note back — plus everything that happened after it — when the session is compacted or resumed.",
   "author": {
     "name": "Karin Naak-in",
     "url": "https://github.com/byelan74"
   },
   "license": "MIT",
-  "keywords": ["compact", "context", "resume", "memory", "long-running", "agentic"],
+  "keywords": [
+    "compact",
+    "context",
+    "resume",
+    "memory",
+    "long-running",
+    "agentic"
+  ],
   "homepage": "https://github.com/byelan74/claude-karin-plugins",
   "repository": "https://github.com/byelan74/claude-karin-plugins"
 }
